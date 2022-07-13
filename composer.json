@@ -1,9 +1,11 @@
 {
-  "autoad": {
+  "autoload": {
     "psr-4": {
-      "APP\\": "src"
+      "App\\": "src"
     },
-    "files": ["config.php"]
+    "files": [
+      "./config.php"
+    ]
   },
   "require": {}
 }

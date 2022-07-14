@@ -12,8 +12,8 @@
       $method = strtolower($_SERVER['REQUEST_METHOD']);
       try{
         $response = call_user_func_array(array(new $service, $method),$url);
-        http_response_code(200);
-        echo json_encode(array('status' => 'sucess','data' => $response));
+       
+        echo json_encode(array('data' => $response));
         exit;
       }catch(\Exception $err){
         http_response_code(404);

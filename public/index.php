@@ -12,10 +12,9 @@
       $method = strtolower($_SERVER['REQUEST_METHOD']);
       try{
         $response = call_user_func_array(array(new $service, $method),$url);
-      
         echo json_encode(array('status' => 'sucess','data' => $response));
       }catch(\Exception $err){
-
+          echo 'Error'.$err->getMessage();
       }
     }
   }

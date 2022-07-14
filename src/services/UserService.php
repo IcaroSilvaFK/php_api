@@ -1,7 +1,7 @@
 <?php 
   namespace App\Services;
   
-  use App\Models\user;
+  use App\Models\User;
 
   class UserService{
     public function get($id = null){
